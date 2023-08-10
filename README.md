@@ -8,6 +8,8 @@ Leveraging ChatGPT to do sentiment analysis on a large amount of articles. Thus 
 
 CSV file contains features of new articles including a column named body that is the raw text of the article body.
 
+The response json file stores responses from GPT and suggestion is that it has the same name as the csv file for convience.
+
 ```python
 # api_key is the openai api key
 # path_csv is the csv file contains articles want to be analysed, and must contain a column named body which is the
@@ -23,6 +25,8 @@ path_response = "test_data/2011_files_2.json"
 
 get_response(path_csv=path_csv, path_prompt=path_prompt, path_response_json=path_response, api_key=api_key, verbose=True)
 ```
+
+Output file contains all contents from csv and parsed response from GPT response, suggested name convention is csv file name + "_final".
 
 ```python
 # path_csv is the csv file contains articles want to be analysed, and must contain a column named body which is the
