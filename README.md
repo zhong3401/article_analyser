@@ -6,6 +6,8 @@ Leveraging ChatGPT to do sentiment analysis on a large amount of articles. Thus 
 
 ## Usage
 
+CSV file contains features of new articles including a column named body that is the raw text of the article body.
+
 ```python
 # api_key is the openai api key
 # path_csv is the csv file contains articles want to be analysed, and must contain a column named body which is the
